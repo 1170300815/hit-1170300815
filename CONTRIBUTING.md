@@ -38,10 +38,6 @@ Definition of done
 Style guides
 Code of conduct
 
-
-
-
-
 Contribute to GitLab
 Thank you for your interest in contributing to GitLab. This guide details how
 to contribute to GitLab in a way that is efficient for everyone.
