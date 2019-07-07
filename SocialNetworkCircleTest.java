@@ -8,7 +8,9 @@ import java.io.IOException;
 import org.junit.jupiter.api.Test;
 
 import myException.FileChooseException;
-
+/**
+*This class is designed to test Class SocialNetworkCircleTest.
+*/
 class SocialNetworkCircleTest {
 
 	SocialNetworkCircle sn = new SocialNetworkCircle();
@@ -18,6 +20,8 @@ class SocialNetworkCircleTest {
 		File SocialNetworkCircleFile = new File("");
 		SocialNetworkCircleFile = new File("src/Spring2019_HITCS_SC_Lab3-master/SocialNetworkCircle.txt");
 		sn.readFileAndCreateSystem(SocialNetworkCircleFile);
+		sn.addTrack(1);
+		assertEquals(5, sn.getTrackNum());
 		assertEquals(3, sn.getTrack(1).getNumberOfObjects());
 		assertEquals(1, sn.getTrack(2).getNumberOfObjects());
 		//assertTrue(sn.getTrack(1).contains());
